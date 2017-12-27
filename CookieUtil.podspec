@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CookieUtil"
-  s.version      = "0.0.2"
+  s.version      = "0.0.6"
   s.summary      = "设置缓存策略和清空cookie"
   s.description  = <<-DESC
 设置缓存策略和清空cookie，分别在项目启动和退出时进行设置
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/liuhongjun719/CookieUtil.git", :tag => "#{s.version}" }
   s.source_files  = "CookieUtil/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
-
+  s.dependency 'MJRefresh'
+  s.ios.deployment_target = "8.0"
 
 
 
